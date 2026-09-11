@@ -21,5 +21,22 @@ int main()
         cout << numbers[i] << endl;
     }
 
+    // STRINGS (C++ has a built-in string type, unlike C)
+    string name = "Amrit";
+    cout << "Name:" << name << endl;
+    cout << "Length of name:" << name.length() << endl;
+
+    // VECTORS (A resizable array, can grow and shrink in size)
+    vector<int> scores;   // Declaring a vector (starts empty no fixed size)
+    scores.push_back(90); // Adding elements to the vector
+    scores.push_back(95);
+    scores.push_back(105);
+
+    cout << "Vector Contents: " << endl;
+    for (int i = 0; i < scores.size(); i++)
+    {                              // .size() returns current number of elements
+        cout << scores[i] << endl; // Accessing the elements using index
+    }
+
     return 0;
 }
