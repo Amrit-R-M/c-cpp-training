@@ -47,5 +47,15 @@ int main()
     greet("Amrit");
     greet(); // uses default value "friend"
 
+    // Demonstrating pass by value - original stays unchanged
+    int num1 = 5;
+    addOneByValue(num1);
+    cout << "After pass by value: " << num1 << endl; // still 5
+
+    // Demonstrating pass by reference - original DOES change
+    int num2 = 5;
+    addOneByReference(num2);
+    cout << "After pass by reference: " << num2 << endl; // now 6
+
     return 0;
 }
